@@ -37,3 +37,6 @@ def test_nlu(test_cases):
 
 def highlight_text(text, color):
     return f'<span style="color:{color}">{text}</span>'
+
+def highlight_slot(text, slot_name, slot_value, color):
+    return f'<span style="color:{color};font-size:0.9em;position:relative;display:inline-block">{slot_value}<span style="font-size:0.7em;color:gray;position:absolute;left:0;bottom:-1em">{slot_name}</span></span>'

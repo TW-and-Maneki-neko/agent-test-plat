@@ -7,9 +7,10 @@ from agent_interaction import agent_interaction_page
 st.set_page_config(page_title="TEST PLAT for Thought Agent", layout="wide")
 
 pages = {
-    "E2E Test": e2e_test_page,
     "NLU Test": nlu_test_page,
-    "Agent Interaction": agent_interaction_page
+    "E2E Test": e2e_test_page,
+    "Chat with Agent": agent_interaction_page,
+    "Prompt Debug": agent_interaction_page
 }
 
 st.sidebar.title("Navigation")
