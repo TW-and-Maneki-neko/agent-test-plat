@@ -1,6 +1,6 @@
 import streamlit as st
 from tabs.nlu_test_cases import nlu_test_cases_tab
-from tabs.add_nlu_case import add_nlu_case_tab
+from tabs.edit_nlu_case import edit_nlu_case_tab
 
 
 def nlu_test_page():
@@ -10,4 +10,4 @@ def nlu_test_page():
         nlu_test_cases_tab()
 
     with tabs[1]:
-        add_nlu_case_tab()
+        edit_nlu_case_tab()

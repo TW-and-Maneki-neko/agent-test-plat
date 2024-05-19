@@ -5,18 +5,22 @@ from config import NLU_API_URL
 
 def load_test_cases(agent_dir, domain):
     test_cases = []
-    test_cases_dir = os.path.join(os.path.join(agent_dir, "auto_test"), domain)
+    test_cases_dir = os.path.join(agent_dir, "auto_test")
+    test_cases_file = os.path.join(test_cases_dir, f"{domain}.json")
     if not os.path.exists(test_cases_dir):
         os.makedirs(test_cases_dir)
+        return []
     
-    for file_name in os.listdir(test_cases_dir):
-        if file_name.endswith(".json"):
-            file_path = os.path.join(test_cases_dir, file_name)
-            with open(file_path, "r", encoding="utf-8") as file:
-                test_cases.extend(json.load(file))
+    if not os.path.exists(test_cases_file):
+        return []
+    
+    with open(test_cases_file, "r", encoding="utf-8") as file:
+        test_cases.extend(json.load(file))
     return test_cases
 
 def save_test_cases(file_path, test_cases):
+    if not test_cases:  # 检查是否为空
+        return
     with open(file_path, "w", encoding="utf-8") as file:
         json.dump(test_cases, file, ensure_ascii=False, indent=4)
 
