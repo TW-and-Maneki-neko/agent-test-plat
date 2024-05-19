@@ -1,0 +1,1691 @@
+[
+    {
+        "input": "比亚迪持有哪些产品",
+        "expected_intent": "cmb_products_held",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "比亚迪股份有限公司",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪股份有限公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "承兑到期提示付款",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "二维码",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "中国船舶集团青岛北海造船有限公司",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "company": {
+                "value": "中国船舶集团青岛北海造船有限公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业APP上如何开通代发工资",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "代发工资",
+                "confidence": 0.9975
+            }
+        }
+    },
+    {
+        "input": "比亚迪公司基本信息",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "什么是销售云？",
+        "expected_intent": "basic_profile|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "销售云",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "保函的办理流程是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "保函",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "推荐产品",
+        "expected_intent": "product_rec",
+        "expected_slots": {}
+    },
+    {
+        "input": "网银权限调整",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "已经开通过哪些产品",
+        "expected_intent": "cmb_products_held",
+        "expected_slots": {}
+    },
+    {
+        "input": "腾讯的谱系客户",
+        "expected_intent": "lineage_customers_name_quantity",
+        "expected_slots": {
+            "company": {
+                "value": "腾讯",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "招企贷",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "招企贷",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "开立全额保函一笔业务可以开立多个保证金账户嘛",
+        "expected_intent": "other",
+        "expected_slots": {
+            "product": {
+                "value": "证金",
+                "confidence": 0.6799999999999999
+            }
+        }
+    },
+    {
+        "input": "移动支付优势",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "移动支付",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "广州润铂晟信息技术有限公司",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "company": {
+                "value": "广州润铂晟信息技术有限公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "网银权限调整",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业法人有逾期还款记录会影响招企贷申请吗",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "企业网银如何打回单",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "企业网银",
+                "confidence": 0.975
+            }
+        }
+    },
+    {
+        "input": "网银转账限额",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "征信授权查询",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "C+组合套餐网银签协议流程",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "C+组合套餐网银",
+                "confidence": 0.9975
+            }
+        }
+    },
+    {
+        "input": "网银激活步骤",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "网银",
+                "confidence": 0.99
+            }
+        }
+    },
+    {
+        "input": "成都xx公司智慧通知存款",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "成都xx公司智慧通知存款",
+                "confidence": 0.9872727272727274
+            }
+        }
+    },
+    {
+        "input": "商票网银提示收票经办操作流程",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "票",
+                "confidence": 0.69
+            }
+        }
+    },
+    {
+        "input": "网银怎么修改登录密码",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "相关案例",
+        "expected_intent": "kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "财资云",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "财资云",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "发票管理服务呢",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "发票管理服务",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "离岸信用证",
+        "expected_intent": "other|slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "离岸信用证",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业APP上如何开通代发工资",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "代发工资",
+                "confidence": 0.9975
+            }
+        }
+    },
+    {
+        "input": "对",
+        "expected_intent": "positive",
+        "expected_slots": {}
+    },
+    {
+        "input": "信用证",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "信用证",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "结构性存款营销话术",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "结构性存款",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "期票业务介绍",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "product": {
+                "value": "期票",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "保函闪电开操过三千万如何办",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "保函闪电开",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "通知存款利率",
+        "expected_intent": "other",
+        "expected_slots": {
+            "product": {
+                "value": "通知",
+                "confidence": 0.5549999999999999
+            }
+        }
+    },
+    {
+        "input": "广州润铂晟信息技术有限公司 非同名进账方TOP5",
+        "expected_intent": "top_5_incoming_counterparties",
+        "expected_slots": {
+            "company": {
+                "value": "广州润铂晟信息技术有限公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "如何开资信证明",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "科创贷利率",
+        "expected_intent": "other",
+        "expected_slots": {
+            "product": {
+                "value": "科创贷",
+                "confidence": 0.8666666666666666
+            }
+        }
+    },
+    {
+        "input": "托管+开通",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "托管+",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "人工",
+        "expected_intent": "chitchat",
+        "expected_slots": {}
+    },
+    {
+        "input": "网上企业银行的介绍",
+        "expected_intent": "basic_profile|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "网上企业银行",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "你好啊",
+        "expected_intent": "chitchat",
+        "expected_slots": {}
+    },
+    {
+        "input": "什么是资金用户？",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "product": {
+                "value": "资金用户",
+                "confidence": 0.7849999999999999
+            }
+        }
+    },
+    {
+        "input": "招企代的一句话描述",
+        "expected_intent": "basic_profile|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "招企代",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "网银线上查询企业征信",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "客户如何打印有红章的流水",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "基本情况",
+        "expected_intent": "basic_profile",
+        "expected_slots": {}
+    },
+    {
+        "input": "融资业务",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "prod_type": {
+                "value": "融资",
+                "confidence": 0.965
+            }
+        }
+    },
+    {
+        "input": "结算信息",
+        "expected_intent": "customer_settlement",
+        "expected_slots": {}
+    },
+    {
+        "input": "请帮我生成财资管理云标准版营销话术",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "财资管理云标准版",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "我行有哪些结算类产品",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "prod_type": {
+                "value": "结算",
+                "confidence": 0.98
+            }
+        }
+    },
+    {
+        "input": "双货币",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "双货币",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "比亚迪基本概况",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "维维豆奶产品推荐",
+        "expected_intent": "product_rec",
+        "expected_slots": {
+            "company": {
+                "value": "维维豆奶",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "比亚迪的结算情况",
+        "expected_intent": "customer_settlement",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "是什么",
+        "expected_intent": "chitchat",
+        "expected_slots": {}
+    },
+    {
+        "input": "特色存款",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "存款",
+                "confidence": 0.94
+            }
+        }
+    },
+    {
+        "input": "广州润铂晟信息技术有限公司结算",
+        "expected_intent": "customer_settlement",
+        "expected_slots": {
+            "company": {
+                "value": "广州润铂晟信息技术有限公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "C+存款签约流程",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "C+存款",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "境外因公汇款怎么办",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "境外因公汇款",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "我行票据相关产品有哪些",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "prod_type": {
+                "value": "我行票据",
+                "confidence": 0.99
+            }
+        }
+    },
+    {
+        "input": "深圳瑞乾科技公司存款概况",
+        "expected_intent": "customer_deposits",
+        "expected_slots": {
+            "company": {
+                "value": "深圳瑞乾科技公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "开户清单",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "CBS支持支付宝对接吗",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "CBS",
+                "confidence": 0.99
+            }
+        }
+    },
+    {
+        "input": "基本信息",
+        "expected_intent": "basic_profile",
+        "expected_slots": {}
+    },
+    {
+        "input": "UBank优势是什么",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "UBank",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "适用对象",
+        "expected_intent": "kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "企业App开通转账功能",
+        "expected_intent": "kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "保理",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "保理",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "腾讯的供应商有哪些",
+        "expected_intent": "top_5_partners",
+        "expected_slots": {
+            "company": {
+                "value": "腾讯",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "网银一般用户的u盾坏了",
+        "expected_intent": "other|kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "手机可以网银代发工资嘛",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "网银代发工资",
+                "confidence": 0.9966666666666667
+            }
+        }
+    },
+    {
+        "input": "薪福通智能费控目前可以支持什么方式对公支付",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "对公支付",
+                "confidence": 0.995
+            }
+        }
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "财资管理云标准版与企业版的区别",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "财资管理云",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业app开通代发工资",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "代发工资",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "网银使用不了",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "聚合收款",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "聚合收款",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "招企贷基本内容",
+        "expected_intent": "basic_profile|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "招企贷",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "征信查询",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "请帮我生成财资管理云标准版营销话术",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "财资管理云标准版",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "薪福通花名册导入",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "薪福通花",
+                "confidence": 0.9975
+            }
+        }
+    },
+    {
+        "input": "介绍下组合存款",
+        "expected_intent": "basic_profile|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "组合存款",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "新福通关联多少个资金来源",
+        "expected_intent": "lineage_customers_name_quantity",
+        "expected_slots": {
+            "company": {
+                "value": "新福通",
+                "confidence": 0.9966666666666667
+            }
+        }
+    },
+    {
+        "input": "网银转账价格",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "云直联的一句话描述",
+        "expected_intent": "kyp|basic_profile",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "比亚迪股份有限公司",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪股份有限公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "聚合支付",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "聚合支付",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "特色专区",
+        "expected_intent": "other|slot_filling",
+        "expected_slots": {}
+    },
+    {
+        "input": "随心展优惠券如何领取？",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "随心展",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "模拟银行",
+        "expected_intent": "other|slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "模拟银行",
+                "confidence": 0.9850000000000001
+            }
+        }
+    },
+    {
+        "input": "客户推荐材料",
+        "expected_intent": "product_rec",
+        "expected_slots": {}
+    },
+    {
+        "input": "企业App的简介",
+        "expected_intent": "basic_profile|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "企业App",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "科创贷",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "科创贷",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "人工",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "CBS有金融类企业的案例吗",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "CBS",
+                "confidence": 0.87
+            },
+            "prod_type": {
+                "value": "金融",
+                "confidence": 0.97
+            }
+        }
+    },
+    {
+        "input": "网银查询已开立的银行承兑汇票",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "普惠评级无法发起",
+        "expected_intent": "other",
+        "expected_slots": {
+            "product": {
+                "value": "普惠评级",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "比亚迪呢",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "你能告诉我招行客服电话么？",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "swift",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "是",
+        "expected_intent": "positive",
+        "expected_slots": {}
+    },
+    {
+        "input": "代发类型是其他的能备注工资吗",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "广州润铂晟信息技术有限公司 流水收款",
+        "expected_intent": "total_incoming",
+        "expected_slots": {
+            "company": {
+                "value": "广州润铂晟信息技术有限公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "云直联的产品优势是?",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业app开通代发工资",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "代发工资",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业网银上如何进入“缴税（费）账户账号”页面",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "有哪些客户特征？",
+        "expected_intent": "basic_profile",
+        "expected_slots": {}
+    },
+    {
+        "input": "企业APP里怎么看电子回单在哪",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "财资管理云",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "财资管理云",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "比亚迪的存款是多少",
+        "expected_intent": "customer_deposits",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "客户使用金蝶云星辰系统，可以开直联吗",
+        "expected_intent": "other",
+        "expected_slots": {
+            "company": {
+                "value": "金蝶云星辰系统",
+                "confidence": 0.9585714285714285
+            }
+        }
+    },
+    {
+        "input": "有哪些功能",
+        "expected_intent": "kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "发票云的产品介绍",
+        "expected_intent": "basic_profile|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "发票云",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "什么是财资管理云",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "product": {
+                "value": "财资管理云",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "该公司的存款信息",
+        "expected_intent": "customer_deposits",
+        "expected_slots": {}
+    },
+    {
+        "input": "比亚迪的上下游企业",
+        "expected_intent": "top_5_partners",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "到账通知的产品优势",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "到账通知",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "它的营销话术呢",
+        "expected_intent": "kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "开户清单",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "网银如何变更股东信息",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "屈臣氏的谱系客户",
+        "expected_intent": "lineage_customers_name_quantity",
+        "expected_slots": {
+            "company": {
+                "value": "屈臣氏",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "生成一个财资管理云专业版的宣传",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "财资管理云专业版",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "请帮我生成财资管理云标准版营销话术",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "财资管理云标准版",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业APP移动代发配置",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "企业APP移动代发",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "为什么我不能看啊",
+        "expected_intent": "chitchat",
+        "expected_slots": {}
+    },
+    {
+        "input": "招企贷",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "招企贷",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业APP简介",
+        "expected_intent": "basic_profile|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "企业APP",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "猴赛雷啊",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "company": {
+                "value": "猴",
+                "confidence": 0.62
+            }
+        }
+    },
+    {
+        "input": "如何在网银上购买定期",
+        "expected_intent": "other|kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "优点",
+        "expected_intent": "kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "聚合收款是什么",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "product": {
+                "value": "聚合收款",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "销户资料",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "深圳瑞乾公司非同名出账对手",
+        "expected_intent": "top_5_outgoing_counterparties",
+        "expected_slots": {
+            "company": {
+                "value": "深圳瑞乾公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "通知存款",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "通知存款",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "财资管理云",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "财资管理云",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "利率额度",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "通知存款利率",
+        "expected_intent": "other",
+        "expected_slots": {
+            "product": {
+                "value": "通知",
+                "confidence": 0.5549999999999999
+            }
+        }
+    },
+    {
+        "input": "屈臣氏的持有产品",
+        "expected_intent": "cmb_products_held",
+        "expected_slots": {
+            "company": {
+                "value": "屈臣氏",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "CBS8支持微信对接吗",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "CBS8",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "cbs是什么",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "product": {
+                "value": "cbs",
+                "confidence": 0.99
+            }
+        }
+    },
+    {
+        "input": "是",
+        "expected_intent": "positive",
+        "expected_slots": {}
+    },
+    {
+        "input": "oa审批的办理流程",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "oa审批",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "理想汽车的基本情况",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "company": {
+                "value": "理想汽车",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "网银一般用户的u盾坏了",
+        "expected_intent": "other|kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "比亚迪汽车有限公司金融服务方案",
+        "expected_intent": "product_rec",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪汽车有限公司",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "帮忙问下企业网银上购买定期存款，转成线下办理，需要什么材料吗",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "招商银行SWIFT代码",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "比亚迪交易对手进账",
+        "expected_intent": "top_5_incoming_partners",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "修改网银密码",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "薪福通 适用对象",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "薪福通",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "比亚迪的结算概括",
+        "expected_intent": "customer_settlement",
+        "expected_slots": {
+            "company": {
+                "value": "比亚迪",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业app上如何开通代发工资",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "代发工资",
+                "confidence": 0.9975
+            }
+        }
+    },
+    {
+        "input": "网银代发手续费",
+        "expected_intent": "kyp|other",
+        "expected_slots": {
+            "product": {
+                "value": "网银代发",
+                "confidence": 0.985
+            }
+        }
+    },
+    {
+        "input": "一键核实报关单",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "报关单",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "预约同屏互动",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "同屏互动",
+                "confidence": 0.7825000000000001
+            }
+        }
+    },
+    {
+        "input": "你好",
+        "expected_intent": "chitchat",
+        "expected_slots": {}
+    },
+    {
+        "input": "2023对公存款利率变化，活期，七天通知，协定",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "它适合哪些客户",
+        "expected_intent": "kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "广州润铂晟持有招行什么产品",
+        "expected_intent": "cmb_products_held",
+        "expected_slots": {
+            "company": {
+                "value": "广州润铂晟",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "广州润铂晟",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "company": {
+                "value": "广州润铂晟",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "薪福通资金用户的作用",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "薪福通资金",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "手机银行申请发票云",
+        "expected_intent": "other",
+        "expected_slots": {
+            "product": {
+                "value": "发票云",
+                "confidence": 0.9533333333333333
+            }
+        }
+    },
+    {
+        "input": "更改代发协议类型",
+        "expected_intent": "other",
+        "expected_slots": {}
+    },
+    {
+        "input": "保证金闪电开是否需要线下审查",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "保证金闪电开",
+                "confidence": 0.9566666666666666
+            }
+        }
+    },
+    {
+        "input": "产品要素",
+        "expected_intent": "kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "产品内容",
+        "expected_intent": "kyp|basic_profile",
+        "expected_slots": {}
+    },
+    {
+        "input": "信用证议付与福费廷区别",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "信用证议付",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "流动资金贷款",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "流动资金贷款",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "e餐通",
+        "expected_intent": "kyp|slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "e餐通",
+                "confidence": 0.8966666666666666
+            }
+        }
+    },
+    {
+        "input": "自助寄单",
+        "expected_intent": "slot_filling",
+        "expected_slots": {
+            "product": {
+                "value": "自助寄单",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "人工客服",
+        "expected_intent": "chitchat",
+        "expected_slots": {}
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业红包产品",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "prod_type": {
+                "value": "企业红包",
+                "confidence": 0.995
+            }
+        }
+    },
+    {
+        "input": "对客版本的宣传手册",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "对客版本",
+                "confidence": 0.9950000000000001
+            }
+        }
+    },
+    {
+        "input": "一键一结一购是哪些产品",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "一键一结一购",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "掌上薪福通支持付款吗？",
+        "expected_intent": "other",
+        "expected_slots": {
+            "product": {
+                "value": "掌上薪福通",
+                "confidence": 0.952
+            }
+        }
+    },
+    {
+        "input": "数字人民币对公钱包的介绍",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "product": {
+                "value": "数字人民币对公钱包",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "开具保函",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "保函",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "云直联的产品优势是？",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "云直联",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "商票网银提示收票经办操作流程",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "票",
+                "confidence": 0.69
+            }
+        }
+    },
+    {
+        "input": "即期信用证业务如何办理",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "务",
+                "confidence": 0.92
+            }
+        }
+    },
+    {
+        "input": "州屈臣氏是否有贷款",
+        "expected_intent": "customer_loans",
+        "expected_slots": {
+            "company": {
+                "value": "州屈臣氏",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "代发明细",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "代发",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "核保要求",
+        "expected_intent": "other|kyp",
+        "expected_slots": {
+            "product": {
+                "value": "核保",
+                "confidence": 0.905
+            }
+        }
+    },
+    {
+        "input": "组合存款A收费吗",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "组合存款A",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "企业app的优势是什么",
+        "expected_intent": "kyp",
+        "expected_slots": {
+            "product": {
+                "value": "企业app",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "介绍下薪福通",
+        "expected_intent": "basic_profile",
+        "expected_slots": {
+            "product": {
+                "value": "薪福通",
+                "confidence": 1.0
+            }
+        }
+    },
+    {
+        "input": "竞品情况",
+        "expected_intent": "kyp",
+        "expected_slots": {}
+    },
+    {
+        "input": "你好基本信息",
+        "expected_intent": "basic_profile",
+        "expected_slots": {}
+    }
+]

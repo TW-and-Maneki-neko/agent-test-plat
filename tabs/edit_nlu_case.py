@@ -26,10 +26,8 @@ def edit_nlu_case_tab():
     if st.button("保存修改"):
         try:
             # 合并列为 JSON 字符串
-            cols = edited_df.columns.difference(['input', 'expected_intent'])
             edited_df['expected_slots'] = edited_df.drop(['input', 'expected_intent'], axis=1).apply(lambda row: {col.replace('.value', ''): {"value": value} for col, value in row.to_dict().items()}, axis=1)
             edited_test_cases = edited_df[['input', 'expected_intent', 'expected_slots']].to_dict("records")
-            print(edited_test_cases)
             save_test_cases(test_cases_file, edited_test_cases)
             st.success("测试用例已保存。")
         except Exception as e:
