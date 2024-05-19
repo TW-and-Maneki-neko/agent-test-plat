@@ -1,25 +1,25 @@
 import streamlit as st
-import json
-from config import NLU_TEST_CASES_FILE
+import pandas as pd
+from config import AGENT_PROJECT_DIR
 from utils import load_test_cases, save_test_cases
 
 def add_nlu_case_tab():
-    st.header("添加测试用例")
-    new_nlu_case_input = st.text_input("输入NLU测试用例")
-    new_nlu_case_expected_intent = st.text_input("期望意图")
-    new_nlu_case_expected_slots = st.text_input("期望槽位 (JSON格式)")
+    st.header("NLU 测试用例")
 
-    if st.button("添加NLU测试用例"):
+    # 加载现有测试用例
+    nlu_test_cases = load_test_cases(AGENT_PROJECT_DIR, 'nlu')
+
+    # 将测试用例转换为 DataFrame
+    df = pd.DataFrame(nlu_test_cases)
+
+    # 显示测试用例
+    edited_df = st.data_editor(df, num_rows="dynamic")
+
+    # 保存编辑
+    if st.button("保存修改"):
         try:
-            expected_slots = json.loads(new_nlu_case_expected_slots)
-            new_nlu_case = {
-                "input": new_nlu_case_input,
-                "expected_intent": new_nlu_case_expected_intent,
-                "expected_slots": expected_slots
-            }
-            nlu_test_cases = load_test_cases(NLU_TEST_CASES_FILE)
-            nlu_test_cases.append(new_nlu_case)
-            save_test_cases(NLU_TEST_CASES_FILE, nlu_test_cases)
-            st.success("NLU测试用例已添加并保存。")
-        except json.JSONDecodeError:
-            st.error("期望槽位格式错误，请输入有效的JSON格式。")
+            edited_test_cases = edited_df.to_dict("records")
+            save_test_cases(AGENT_PROJECT_DIR, 'nlu', edited_test_cases)
+            st.success("测试用例已保存。")
+        except Exception as e:
+            st.error(f"保存失败: {e}")

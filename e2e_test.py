@@ -2,9 +2,9 @@ import streamlit as st
 import json
 import requests
 import os
-from config import NLU_TEST_CASES_FILE, AGENT_API_URL
+from config import AGENT_PROJECT_DIR, AGENT_API_URL
 
-E2E_TEST_CASES_FILE = os.path.join(NLU_TEST_CASES_FILE, "e2e_test_cases.json")
+E2E_TEST_CASES_FILE = os.path.join(AGENT_PROJECT_DIR, "e2e_test_cases.json")
 
 
 def load_test_cases(file_path):

@@ -3,11 +3,15 @@ import os
 import requests
 from config import NLU_API_URL
 
-def load_test_cases(agent_dir):
+def load_test_cases(agent_dir, domain):
     test_cases = []
-    for file_name in os.listdir(agent_dir):
+    test_cases_dir = os.path.join(os.path.join(agent_dir, "auto_test"), domain)
+    if not os.path.exists(test_cases_dir):
+        os.makedirs(test_cases_dir)
+    
+    for file_name in os.listdir(test_cases_dir):
         if file_name.endswith(".json"):
-            file_path = os.path.join(agent_dir, file_name)
+            file_path = os.path.join(test_cases_dir, file_name)
             with open(file_path, "r", encoding="utf-8") as file:
                 test_cases.extend(json.load(file))
     return test_cases

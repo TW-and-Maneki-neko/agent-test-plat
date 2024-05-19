@@ -1,13 +1,13 @@
 import streamlit as st
 from collections import defaultdict
 
-from config import NLU_TEST_CASES_FILE
+from config import AGENT_PROJECT_DIR
 from utils import load_test_cases, highlight_slot, test_nlu
 
 def nlu_test_cases_tab():
     st.header("运行 NLU 测试")
 
-    nlu_test_cases = load_test_cases(NLU_TEST_CASES_FILE)
+    nlu_test_cases = load_test_cases(AGENT_PROJECT_DIR, 'nlu')
 
     # 统计各个意图的测试用例数量
     intent_counts = {}
