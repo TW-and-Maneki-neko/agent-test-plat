@@ -8,7 +8,7 @@ from utils import load_test_cases, test_nlu, calculate_metrics
 def nlu_test_cases_tab():
     st.header("针对 NLU 测试")
 
-    nlu_test_cases = load_test_cases(AGENT_PROJECT_DIR, 'nlu')[0:10]
+    nlu_test_cases = load_test_cases(AGENT_PROJECT_DIR, 'nlu')
 
     # 统计各个意图的测试用例数量
     intent_counts = {}

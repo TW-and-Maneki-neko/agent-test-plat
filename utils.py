@@ -27,22 +27,31 @@ def save_test_cases(file_path, test_cases):
 
 def test_nlu(test_cases):
     results = []
-    for case in test_cases:
-        response = requests.post(NLU_API_URL, json={"input_text": case["input"]})
+    batch_size = 64  # Define batch size
+
+    for i in range(0, len(test_cases), batch_size):
+        batch_cases = test_cases[i:i+batch_size]
+        input_texts = [case["input"] for case in batch_cases]
+        response = requests.post(NLU_API_URL, json={"input_texts": input_texts})
         response_data = response.json()
-        intent_correct = response_data["intent_label"] == case["expected_intent"]
-        slots_correct = response_data["slot_labels"] == case["expected_slots"]
-        results.append({
-            "input": case["input"],
-            "expected_intent": case["expected_intent"],
-            "actual_intent": response_data["intent_label"],
-            "expected_slots": case["expected_slots"],
-            "actual_slots": response_data["slot_labels"],
-            "confidence": response_data["intent_confidence"],
-            "intent_correct": intent_correct,
-            "slots_correct": slots_correct
-        })
+
+        for idx, case in enumerate(batch_cases):
+            case_result = response_data[idx]
+            intent_correct = case_result["intent_label"] == case["expected_intent"]
+            slots_correct = case_result["slot_labels"] == case["expected_slots"]
+            results.append({
+                "input": case["input"],
+                "expected_intent": case["expected_intent"],
+                "actual_intent": case_result["intent_label"],
+                "expected_slots": case["expected_slots"],
+                "actual_slots": case_result["slot_labels"],
+                "confidence": case_result["intent_confidence"],
+                "intent_correct": intent_correct,
+                "slots_correct": slots_correct
+            })
+
     return results
+
 
 def highlight_text(text, color):
     return f'<span style="color:{color}">{text}</span>'
