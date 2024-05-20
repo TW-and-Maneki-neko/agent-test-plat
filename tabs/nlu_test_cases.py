@@ -21,14 +21,19 @@ def nlu_test_cases_tab():
 
     st.markdown("---")
 
+    # 使用 session_state 来存储复选框的状态
+    if 'show_all' not in st.session_state:
+        st.session_state.show_all = False
+
+    if 'nlu_results' not in st.session_state:
+        st.session_state.nlu_results = []
+
     # 添加按钮
     if st.button("运行NLU测试"):
-        nlu_results = test_nlu(nlu_test_cases)
-        st.write("测试结果：")
+        st.session_state.nlu_results = test_nlu(nlu_test_cases)
 
-        # 使用 session_state 来存储复选框的状态
-        if 'show_all' not in st.session_state:
-            st.session_state.show_all = False
+    if st.session_state.nlu_results:
+        st.write("测试结果：")
 
         # 添加复选框
         def update_show_all():
@@ -37,21 +42,21 @@ def nlu_test_cases_tab():
         st.checkbox("显示所有结果", value=st.session_state.show_all, on_change=update_show_all)
 
         # 渲染结果表格
-        result_table = generate_result_table(nlu_results, st.session_state.show_all)
+        result_table = generate_result_table(st.session_state.nlu_results, st.session_state.show_all)
         table_container = st.markdown(result_table, unsafe_allow_html=True)
 
         # 重新渲染表格以反映复选框的变化
         if st.session_state.show_all:
-            result_table = generate_result_table(nlu_results, True)
+            result_table = generate_result_table(st.session_state.nlu_results, True)
         else:
-            result_table = generate_result_table(nlu_results, False)
+            result_table = generate_result_table(st.session_state.nlu_results, False)
         table_container.markdown(result_table, unsafe_allow_html=True)
 
         st.markdown("---")
 
         # 计算并显示各个意图的准确率和召回率
         st.subheader("各个意图的准确率和召回率：")
-        stats = calculate_metrics(nlu_results)
+        stats = calculate_metrics(st.session_state.nlu_results)
         # 绘制意图准确率和召回率图表
         
         precision_fig = plot_metrics_chart(stats, "precision")
