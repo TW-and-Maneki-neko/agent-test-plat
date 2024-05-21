@@ -1,8 +1,10 @@
 import os
+import re
 import streamlit as st
 import pandas as pd
 from config import AGENT_PROJECT_DIR
 from utils import load_test_cases, save_test_cases
+
 
 def process_row(row):
     # 合并列为 JSON 字符串
@@ -36,8 +38,9 @@ def edit_nlu_case_tab():
     df = df.join(pd.json_normalize(df['expected_slots']))
     df = df.drop('expected_slots', axis=1)
 
-    # 显示测试用例
-    edited_df = st.data_editor(df, num_rows="dynamic")
+    # 隐藏以 '.confidence' 结尾的列
+    columns_to_show = [col for col in df.columns if not re.search(r'\.confidence$', col)]
+    edited_df = st.data_editor(df[columns_to_show], num_rows="dynamic")
 
     # 保存编辑
     if st.button("保存修改"):

@@ -27,7 +27,7 @@ def generate_result_table(nlu_results, show_all):
         show_result = show_all or expected_intent != actual_intent or any(expected_slots[slot_name]["value"] != actual_slots.get(slot_name, {}).get("value", None) for slot_name in expected_slots) or confidence < 0.7
 
         if show_result:
-            result_table += f"<tr><td>{input_text}</td><td style='color:{intent_color}'>{actual_intent}</td><td>{expected_intent}</td><td>{highlighted_input}</td><td style='color:{confidence_color}'>{confidence}</td></tr>"
+            result_table += f"<tr style='font-size:13px'><td>{input_text}</td><td style='color:{intent_color}'>{actual_intent}</td><td>{expected_intent}</td><td>{highlighted_input}</td><td style='color:{confidence_color}'>{confidence}</td></tr>"
 
     result_table += "</table>"
 
@@ -72,27 +72,22 @@ def plot_slot_metrics_chart(metrics, intents):
             precision = tp / (tp + fp) if tp + fp > 0 else 0
             recall = tp / (tp + fn) if tp + fn > 0 else 0
 
-            slot_fig.add_trace(go.Bar(
-                x=[f"{intent} - {slot}"],
-                y=[precision],
-                name=f"{intent} - {slot}",
-                text=[f"{precision:.2f}"],
-                textposition='auto'
-            ))
-
-            slot_fig.add_trace(go.Bar(
-                x=[f"{intent} - {slot}"],
+            slot_fig.add_trace(go.Scatter(
+                x=[precision],
                 y=[recall],
+                mode='markers',
                 name=f"{intent} - {slot}",
-                text=[f"{recall:.2f}"],
-                textposition='auto'
+                text=f"{intent} - {slot}",
+                marker=dict(size=10)
             ))
 
     slot_fig.update_layout(
-        title="Precision and Recall for Each Slot",
-        xaxis_title="Slot",
-        yaxis_title="Metric Value",
-        barmode='group'
+        title="Precision vs Recall for Each Slot",
+        xaxis_title="Precision",
+        yaxis_title="Recall",
+        xaxis=dict(range=[0.3, 1.2]),
+        yaxis=dict(range=[0.3, 1.2]),
+        showlegend=True
     )
 
     return slot_fig

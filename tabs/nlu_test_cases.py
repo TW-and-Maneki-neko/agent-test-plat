@@ -19,8 +19,6 @@ def nlu_test_cases_tab():
     fig = plot_intent_dist(nlu_test_cases, intent_counts)
     st.plotly_chart(fig)
 
-    st.markdown("---")
-
     # 使用 session_state 来存储复选框的状态
     if 'show_all' not in st.session_state:
         st.session_state.show_all = False
