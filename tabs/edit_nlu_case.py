@@ -9,7 +9,6 @@ def process_row(row):
     slots = {}
     
     for col, value in row.items():
-        print(col, value)
         if '.' in col:
             slot, sub_key = col.split('.', 1)
             # if value is not nan
