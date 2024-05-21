@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 
 def generate_result_table(nlu_results, show_all):
     result_table = "<table>"
-    result_table += "<tr><th>输入</th><th>实际意图</th><th>实际槽位</th><th>置信度</th></tr>"
+    result_table += "<tr><th>输入</th><th>实际意图</th><th>期望意图</th><th>实际槽位</th><th>意图置信度</th></tr>"
 
     for result in nlu_results:
         input_text = result["input"]
@@ -14,8 +14,8 @@ def generate_result_table(nlu_results, show_all):
         actual_slots = result["actual_slots"]
         confidence = result["confidence"]
 
-        intent_color = "green" if expected_intent == actual_intent else "red"
-        confidence_color = "green" if confidence >= 0.7 else "yellow" if confidence >= 0.5 else "red"
+        intent_color = "#35a835" if expected_intent == actual_intent else "#db3636"
+        confidence_color = "#35a835" if confidence >= 0.7 else "#a3a005" if confidence >= 0.5 else "#db3636"
 
         # 在输入文本中高亮显示实体
         highlighted_input = input_text
@@ -27,7 +27,7 @@ def generate_result_table(nlu_results, show_all):
         show_result = show_all or expected_intent != actual_intent or any(expected_slots[slot_name]["value"] != actual_slots.get(slot_name, {}).get("value", None) for slot_name in expected_slots) or confidence < 0.7
 
         if show_result:
-            result_table += f"<tr><td>{input_text}</td><td style='color:{intent_color}'>{actual_intent}</td><td>{highlighted_input}</td><td style='color:{confidence_color}'>{confidence}</td></tr>"
+            result_table += f"<tr><td>{input_text}</td><td style='color:{intent_color}'>{actual_intent}</td><td>{expected_intent}</td><td>{highlighted_input}</td><td style='color:{confidence_color}'>{confidence}</td></tr>"
 
     result_table += "</table>"
 
